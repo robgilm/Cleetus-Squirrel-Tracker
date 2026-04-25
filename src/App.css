@@ -1,0 +1,96 @@
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+body {
+  margin: 0;
+  background-color: transparent;
+  color: white;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+.widget-container {
+  background: rgba(36, 36, 36, 0.9);
+  width: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  -webkit-app-region: drag;
+  user-select: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-left: 8px;
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.race-status {
+  text-transform: uppercase;
+}
+
+.lap-count {
+  color: #888;
+}
+
+.driver-row {
+  display: flex;
+  align-items: center;
+  background: #2d2d2d;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.driver-row:last-child {
+  margin-bottom: 0;
+}
+
+.car-number {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #f1c40f;
+  width: 45px;
+  text-align: center;
+  border-right: 1px solid #444;
+  margin-right: 10px;
+}
+
+.driver-info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ccc;
+}
+
+.pos {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: white;
+}
+
+.error {
+  font-size: 0.6rem;
+  color: #e74c3c;
+  margin-top: 5px;
+  text-align: center;
+}
