@@ -26,9 +26,9 @@ Built for the community, this app provides a clean, broadcast-style overlay that
 
 ### Option 1: Standalone Widget (Easiest)
 A pre-built, portable `.exe` version is included in this repository for immediate use. 
-1.  Navigate to the `release/win-unpacked` folder.
-2.  Launch **`CleetusWatch.exe`**.
-3.  The widget will appear as a pinned, "always-on-top" box on your screen.
+1.  **[Download CleetusWatch.exe](https://github.com/robgilm/Cleetus-Squirrel-Tracker/raw/master/release/win-unpacked/CleetusWatch.exe)**
+2.  Launch the app—it will appear as a pinned, "always-on-top" box on your screen.
+3.  *Note: You may need to click "More Info" -> "Run Anyway" on Windows since the app is not signed.*
 
 ### Option 2: Build from Source
 If you want to build the portable desktop app yourself:
