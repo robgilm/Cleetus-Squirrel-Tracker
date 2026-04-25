@@ -95,7 +95,12 @@ const fetchData = async () => {
         </div>
       </div>
 
-      {error && <div className="error">{error}</div>}
+      {error && (
+        <div className="error">
+          {error}
+          <button onClick={() => fetchData()} style={{fontSize: '8px', display: 'block', margin: '5px auto'}}>Retry</button>
+        </div>
+      )}
     </div>
   )
 }
