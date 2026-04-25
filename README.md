@@ -24,23 +24,26 @@ Built for the community, this app provides a clean, broadcast-style overlay that
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
-- [npm](https://www.npmjs.com/)
+### Option 1: Standalone Widget (Recommended for watching)
+For the easiest experience, you can build a standalone `.exe` that runs as a portable desktop app:
+1.  Install dependencies: `npm install`
+2.  Build the EXE: `npm run dist`
+3.  Launch the `CleetusWatch.exe` from the `release/win-unpacked` folder.
 
-### Installation
-1. **Clone the repository:**
+### Option 2: Development Mode
+If you want to run the app in a browser or live-reload environment:
+1.  **Clone the repository:**
    ```bash
    git clone https://github.com/robgilm/Cleetus-Squirrel-Tracker.git
    cd Cleetus-Squirrel-Tracker
    ```
 
-2. **Install dependencies:**
+2.  **Install dependencies:**
    ```bash
    npm install
    ```
 
-3. **Run the application:**
+3.  **Run the application:**
    ```bash
    # Start the Vite development server (handles API proxy)
    npm run dev
