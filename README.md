@@ -24,13 +24,19 @@ Built for the community, this app provides a clean, broadcast-style overlay that
 
 ## 🚀 Getting Started
 
-### Option 1: Standalone Widget (Recommended for watching)
-For the easiest experience, you can build a standalone `.exe` that runs as a portable desktop app:
+### Option 1: Standalone Widget (Easiest)
+A pre-built, portable `.exe` version is included in this repository for immediate use. 
+1.  Navigate to the `release/win-unpacked` folder.
+2.  Launch **`CleetusWatch.exe`**.
+3.  The widget will appear as a pinned, "always-on-top" box on your screen.
+
+### Option 2: Build from Source
+If you want to build the portable desktop app yourself:
 1.  Install dependencies: `npm install`
 2.  Build the EXE: `npm run dist`
-3.  Launch the `CleetusWatch.exe` from the `release/win-unpacked` folder.
+3.  Your custom build will be in the `release/win-unpacked` folder.
 
-### Option 2: Development Mode
+### Option 3: Development Mode
 If you want to run the app in a browser or live-reload environment:
 1.  **Clone the repository:**
    ```bash
