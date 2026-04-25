@@ -19,19 +19,24 @@ interface RaceData {
 function App() {
   const [data, setData] = useState<RaceData | null>(null);
   const [error, setError] = useState<string | null>(null);
+const fetchData = async () => {
+  try {
+    // In dev, use the Vite proxy; in production (EXE), fetch directly.
+    const url = import.meta.env.DEV 
+      ? '/live-api/live/feeds/live-feed.json' 
+      : 'https://cf.nascar.com/live/feeds/live-feed.json';
 
-  const fetchData = async () => {
-    try {
-      const response = await fetch('/live-api/live/feeds/live-feed.json');
-      if (!response.ok) throw new Error('Failed to fetch race data');
-      const json = await response.json();
-      setData(json);
-      setError(null);
-    } catch (err) {
-      console.error('Fetch error:', err);
-      setError('Race data unavailable');
-    }
-  };
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Failed to fetch race data');
+    const json = await response.json();
+    console.log('Race Data:', json);
+    setData(json);
+    setError(null);
+  } catch (err) {
+    console.error('Fetch error:', err);
+    setError('Race data unavailable');
+  }
+};
 
   useEffect(() => {
     fetchData();

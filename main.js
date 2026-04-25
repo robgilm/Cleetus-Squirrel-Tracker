@@ -14,8 +14,13 @@ function createWindow() {
     },
   });
 
-  // Load the Vite dev server URL
-  win.loadURL('http://localhost:5174/');
+  // Load the app
+  const isDev = !app.isPackaged;
+  if (isDev) {
+    win.loadURL('http://localhost:5174/');
+  } else {
+    win.loadFile(path.join(__dirname, 'dist/index.html'));
+  }
 
   // Optional: Make it draggable from anywhere
   win.setAspectRatio(220 / 180);
