@@ -1,5 +1,7 @@
 # Cleetus-Squirrel-Tracker 🏎️🐿️
 
+![Cleetus-Squirrel-Tracker Demo](public/screenshots/demo.jpg)
+
 A professional-grade, "always-on-top" desktop telemetry widget for tracking **Garrett Mitchell (Cleetus McFarland)** and **George Siciliano (Squirrel McNutt)** in real-time during ARCA Menards Series races.
 
 Built for the community, this app provides a clean, broadcast-style overlay that pulls live telemetry directly from the ARCA/NASCAR digital data infrastructure.
