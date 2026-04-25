@@ -5,14 +5,19 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 220,
     height: 180,
-    frame: false, // Removes browser bars/buttons
-    alwaysOnTop: true, // Keeps it over the stream
-    transparent: true, // Allows for a clean look
+    frame: false,
+    alwaysOnTop: true,
+    transparent: true,
+    skipTaskbar: false,
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
     },
   });
+
+  // Force it to stay on top even over full-screen apps
+  win.setAlwaysOnTop(true, 'screen-saver');
+  win.setVisibleOnAllWorkspaces(true);
 
   // Load the app
   const isDev = !app.isPackaged;
